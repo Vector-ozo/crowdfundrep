@@ -59,9 +59,8 @@ image{
     justify-content: space-between;
     align-items: center;
     padding: 3rem 6.5rem 17rem;
-    background-image: url(/crowdfunding-product-page-main/images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
-    background: linear-gradient();
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(../images/image-hero-desktop.jpg);
 }
 
 .nav__nav{
@@ -558,7 +557,7 @@ image{
     }
     
     .header{
-        background-image: url(/crowdfunding-product-page-main/images/image-hero-mobile.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(../images/image-hero-mobile.jpg);
         background-repeat: no-repeat;
         background-size: contain;
         padding: 2rem 1.3rem 17rem;
