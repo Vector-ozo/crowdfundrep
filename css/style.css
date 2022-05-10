@@ -1,0 +1,926 @@
+:root{
+    --white-color: #fff;
+    --text-color: hsl(0, 0%, 48%);
+    --black: hsl(0, 0%, 0%);
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100%;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    line-height: 1.7rem;
+    font-size: .95rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+ul{
+    list-style: none;
+}
+
+image{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #147b74;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 6.5rem 17rem;
+    background-image: url(/crowdfunding-product-page-main/images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background: linear-gradient();
+}
+
+.nav__nav{
+    display: none;
+}
+
+.nav__menu{
+    width: 35%;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item a{
+    color: var(--white-color);
+}
+
+.container{
+    position: relative;
+}
+
+.inner__container-1{
+    position: absolute;
+    top: 16rem;
+}
+
+.inner__container-2{
+    width: 60%;
+    margin: auto;
+}
+
+.section{
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 0 2.5rem;
+}
+
+.master__logo{
+    position: absolute;
+    top: -2rem;
+    right: 48%;
+}
+
+.bamboo{
+    padding-top: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.bamboo__header{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.bamboo__image-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 2rem;
+}
+
+.bamboo__image-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 2rem;
+    display: none;
+}
+
+.remove-1{
+    display: none;
+}
+
+.add-2{
+    display: flex;
+}
+
+.bamboo__image-1 p{
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.bamboo__image-2 p{
+    margin: 0 1rem;
+    font-weight: bold;
+    color: #147b74;
+}
+
+.bamboo__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0 0;
+    padding-bottom: 2.5rem;
+}
+
+.bamboo__button{
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 2rem;
+}
+
+.amount{
+    margin-bottom: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.amount__numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-top: 3rem;
+}
+.amount__line{
+    transform: rotate(90deg);
+    width: 5%;
+}
+
+.amount__third{
+    margin-right: 2rem;
+}
+
+.amount__button{
+    position: relative;
+}
+
+.amount__header{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.front__button{
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    padding: .35rem 0;
+    width: 80%;
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    border-radius: 2rem;
+    z-index: 10;
+}
+
+.back__button{
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    padding: .35rem 0;
+    width: 30%;
+    border: none;
+    border-radius: 2rem;
+    z-index: 1;
+}
+
+.about{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.about__header{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding-bottom: 2.5rem;
+}
+
+.about__text-1{
+    padding-bottom: 2.5rem;
+}
+
+.about__text-2{
+    padding-bottom: 2.5rem;
+}
+
+.inner__section-1{
+    padding: 2.5rem 1.5rem;
+    border: .1px solid rgb(216, 213, 213);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.inner__section-2{
+    padding: 2.5rem 1.5rem;
+    border: .1px solid rgb(216, 213, 213);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.inner__section-3{
+    padding: 2.5rem 1.5rem;
+    border: .1px solid rgb(216, 213, 213);
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.inner__flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.inner__header{
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+}
+
+.inner__price{
+    color: hsl(176, 50%, 47%);
+    text-align: end;
+    font-size: .75rem;
+}
+
+.inner__flex-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.inner__time{
+    font-size: 2rem;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    padding-left: .25rem;
+    font-size: 1rem;
+    color: hsl(0, 0%, 48%);
+}
+
+.inner__text{
+    color: hsl(0, 0%, 48%);
+}
+
+.inner__button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+}
+
+.inner__section-3 .inner__flex-2 .inner__button{
+    background-color: hsl(0, 0%, 48%);
+}
+
+.project-project{
+    position: absolute;
+    top: -10rem;
+    width: 60%;
+    margin: auto;
+    z-index: 11;
+    backdrop-filter: blur();
+}
+
+.project{
+    display: none;
+    position: relative;
+    padding: 3rem;
+    background-color: #fff;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.project__header{
+    padding-bottom: 1.5rem;
+}
+
+.project__text{
+    padding-bottom: 2rem;
+    color: hsl(0, 0%, 48%);
+}
+
+.inner__project{
+    position: relative;
+    border: 1px solid rgb(216, 213, 213);
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.border-line{
+    border: 2px solid #147b74;
+}
+
+.project__button{
+    padding: .75rem;
+    border: .1px solid rgb(216, 213, 213);
+    background-color: #fff;
+    border-radius: 100%;
+    margin-right: 1.5rem;
+}
+
+.color-button{
+    background-color: #147b74;
+}
+
+.add-selected{
+    display: block;
+}
+
+.project__flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 2rem;
+}
+
+#second-btn, #third-btn, #fourth-btn{
+    margin-top: 0rem;
+}
+
+.flex__flex__header{
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flex__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex__text{
+    color: hsl(0, 0%, 48%);
+    padding-left: 3rem;
+    margin: 0 2rem;
+}
+
+.span__flex__header{
+    color: hsl(176, 50%, 47%);
+    padding-left: 2rem;
+}
+
+.time__left{
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: end;
+    color:  hsl(0, 0%, 0%);
+}
+
+.color-button{
+    background-color: #fff;
+}
+.color-button .project__button{
+    background-color: #147b74;
+}
+.color-button .selected{
+    display: block;
+}
+
+.left__left{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 48%);
+}
+
+.close__project{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2.5%;
+    cursor: pointer;
+}
+
+.modal__section{
+    display: none;
+    padding: 3.2rem;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.check{
+    padding-bottom: 3.5rem;
+    width: 7rem;
+}
+
+.modal__header{
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.modal__text{
+    padding-bottom: 2rem;
+}
+
+.modal__button{
+    border: none;
+    padding: 1.1rem 2rem;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 2rem;
+    color: #fff;
+}
+
+.add-project{
+    display: block;
+    box-shadow: 200px 200px 500px lightgrey;
+}
+
+.button-color{
+    display: block;
+}
+
+.show-selected{
+    display: block;
+}
+
+.selected{
+    display: none;
+    border-top: 1px solid hsl(0, 0%, 48%);
+    margin-top: 2.5rem;
+    padding: 0 2rem;
+}
+
+.selected__flex{
+    display: flex;
+    padding-top: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected__button{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.button-1{
+    border: none;
+    padding: 1.2rem 2.5rem 1.2rem 1.5rem;
+    border-radius: 3rem;
+}
+
+.button-2{
+    border: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 3rem;
+    color: #fff;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.button__prize{
+    padding-left: .35rem;
+    font-weight: 800;
+}
+
+.add-modal{
+    display: block;
+    box-shadow: 20px 20px 300px rgb(103, 101, 101);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    body{
+        line-height: 1.5rem;
+        font-size: .8rem;
+        color: hsl(0, 0%, 48%);
+    }
+
+    h2, h3, h4{
+        color: hsl(0, 0%, 0%);
+    }
+    
+    .header{
+        background-image: url(/crowdfunding-product-page-main/images/image-hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 2rem 1.3rem 17rem;
+    }
+
+    .nav__nav{
+        display: block;
+    }
+
+    .nav__list .nav__item:nth-child(1), .nav__list .nav__item:nth-child(2){
+        border-bottom: 1px solid var(--black);
+        width: 100%;
+    }
+
+    .nav__menu{
+        width: 89%;
+        position: absolute;
+        top: -70%;
+        margin: auto;
+        background-color: whitesmoke;
+        border-radius: .35rem;
+        border: none;
+        z-index: 20;
+        transition: .5s;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .nav__item a{
+        color: var(--black);
+        font-weight: 400;
+        padding-left: 1rem;
+    }
+
+    .nav__item{  
+        padding: 1.2rem 0;
+    }
+
+    .nav__item:active{
+        background-color: var(--text-color);
+    }
+
+    .close{
+        display: none;
+    }
+
+    .show-menu{
+        top: 25%;
+        box-shadow: 20px 20px 400px var(--black);
+    }
+
+    .remove-hamburger{
+        display: none;
+    }
+
+    .show-close{
+        display: block;
+    }
+
+    .logo{
+        width: 7rem;
+    }
+
+
+    .inner__container-2{
+        width: 85%;
+        margin: auto;
+    }
+
+    .master__logo{
+        top: -1.75rem;
+        right: 43%;
+    }
+
+    .bamboo{
+        padding: 3.25rem 1rem 2.25rem;
+    }
+
+    .bamboo__header{
+        font-size: 1.1rem;
+        letter-spacing: .025rem;
+        padding-bottom: 1rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .bamboo__text{
+        font-size: .8rem;
+        color: hsl(0, 0%, 48%);
+    }
+
+    .bamboo__flex{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+    }
+
+    .bamboo__button{
+        padding: 1.2rem 3rem;
+    }
+
+    .bookmark{
+        display: none;
+    }
+
+    .amount{
+        padding: 0rem 1.5rem 4.5rem;
+    }
+
+    .amount__numbers{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+   
+    .amount__line{
+        transform: rotate(0deg);
+        width: 40%;
+        margin-bottom: 2rem;
+        opacity: .3;
+    }
+
+    .amount__first, .amount__second{
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .amount__third{
+        padding-bottom: 1.5rem;
+        text-align: center;
+        margin: 0;
+        padding-bottom: .5rem;
+    }
+
+    .amount__header{
+        padding-bottom: 1rem;
+    }
+    .amount__text{
+        color: hsl(0, 0%, 48%);
+    }
+
+    .about{
+        padding: 2.5rem 1.5rem;
+    }
+
+    .about__header{
+        padding-bottom: 1.5rem;
+    }
+
+    .inner__section-1, .inner__section-2, .inner__section-3{
+        padding: 1.75rem 1rem;
+    }
+
+    .inner__flex-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .inner__time{
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left{
+        font-weight: 100;
+        padding-left: .5rem;
+    }
+
+    .inner__button{
+        padding: .8rem 1.5rem;
+    }
+
+    .inner__flex-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .inner__header{
+        font-size: .9rem;
+    }
+
+    .inner__price{
+        font-size: .9rem;
+    }
+
+    .project{
+        display: none;
+        padding: 2rem 1.5rem;
+        font-size: .8rem;
+    }
+
+    .add-project{
+        display: block;
+        box-shadow: 20px 20px 300px rgb(119, 114, 114);
+    }
+
+    .close__project{
+        width: .9rem;
+        top: 2.2rem;
+        right: 1.25rem;
+    }
+
+    .project-project{
+        width: 85%;
+        margin: auto;
+    }
+
+    .color-button{
+        background-color: #fff;
+    }
+    .color-button .project__button{
+        background-color: #147b74;
+    }
+    .color-button .selected{
+        display: block;
+    }
+
+    .project__header{
+        font-size: 1rem;
+        color: hsl(0, 0%, 0%);
+    }
+
+    .project__text{
+        padding-bottom: 1.5rem;
+    }
+
+    .inner__project{
+        border: 1px solid rgb(216, 213, 213);
+        padding-bottom: 5rem;
+    }
+        
+    .border-line{
+        border: 2px solid hsl(176, 50%, 47%);
+    }
+
+
+    .flex__header{
+        font-size: .75rem;
+    }
+
+    .project__button{
+        padding: .65rem;
+        margin-right: 1rem;
+    }
+
+    #second-btn, #third-btn, #fourth-btn{
+        margin-top: .75rem;
+    }
+
+    .project__flex{
+        margin: 0 1.25rem;
+    }
+
+    .flex__text{
+        padding-left: 0;
+        position: relative;
+        margin: 0 1.25rem;
+    }
+
+    .time__left{
+        position: absolute;
+        top: 14rem;
+        left: 1.25rem;
+    }
+
+    #second-child{
+        top: 14rem;
+        left: 1.25rem;
+    }
+
+    #third-child{
+        top: 14rem;
+        left: 1.25rem;
+    }
+
+    .flex__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .span__flex__header{
+        padding-left: 0;
+    }
+
+    .selected{
+        display: none;
+        border-top: 2px solid hsl(0, 0%, 48%);
+        margin-top: 5rem;
+    }
+
+    .selected__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .selected__button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .button-1{
+        padding: 1rem 3rem 1rem 1.5rem;
+        background-color: #fff;
+        border: 1px solid hsl(0, 0%, 82%);
+    }
+
+    .modal__section{
+        display: none;
+        padding: 2.5rem 1.5rem;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: #fff;
+        border: none;
+        border-radius: .5rem;
+        position: absolute;
+        top: 6rem;
+    }
+
+    .modal__header{
+        font-size: .95rem;
+        color: hsl(0, 3%, 63%);
+    }
+
+    .check{
+        padding-bottom: 1.5rem;
+        width: 4rem;
+    }
+    
+    .modal__text{
+        padding-bottom: 2rem;
+    }
+    
+    .modal__button{
+        border: none;
+        padding: 1rem 2rem;
+        background-color: hsl(176, 50%, 47%);
+        border-radius: 2rem;
+        color: #fff;
+    }
+
+    .add-modal{
+        display: block;
+        box-shadow: 20px 20px 300px rgb(103, 101, 101);
+    }
+    
+
+}
